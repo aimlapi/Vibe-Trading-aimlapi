@@ -5542,6 +5542,16 @@ _INIT_ENV_PATH = Path.home() / ".vibe-trading" / ".env"
 
 _PROVIDER_CHOICES: list[dict[str, str | None]] = [
     {
+        "label": "aimlapi.com (recommended - 350+ chat models)",
+        "provider": "aimlapi",
+        "key_env": "AIMLAPI_API_KEY",
+        "base_env": "AIMLAPI_BASE_URL",
+        "base_url": "https://api.aimlapi.com/v1",
+        "model": "deepseek/deepseek-v4-pro",
+        "key_prefix": None,
+        "key_placeholder": "api-key...",
+    },
+    {
         "label": "OpenRouter (recommended - multiple models)",
         "provider": "openrouter",
         "key_env": "OPENROUTER_API_KEY",
@@ -5598,16 +5608,6 @@ _PROVIDER_CHOICES: list[dict[str, str | None]] = [
         "base_env": "MODELSCOPE_BASE_URL",
         "base_url": "https://api-inference.modelscope.cn/v1",
         "model": "Qwen/Qwen3.5-27B",
-        "key_prefix": None,
-        "key_placeholder": "api-key...",
-    },
-    {
-        "label": "aimlapi.com",
-        "provider": "aimlapi",
-        "key_env": "AIMLAPI_API_KEY",
-        "base_env": "AIMLAPI_BASE_URL",
-        "base_url": "https://api.aimlapi.com/v1",
-        "model": "deepseek/deepseek-v4-pro",
         "key_prefix": None,
         "key_placeholder": "api-key...",
     },

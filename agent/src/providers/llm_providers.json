@@ -1,5 +1,14 @@
 [
   {
+    "name": "aimlapi",
+    "label": "aimlapi.com",
+    "api_key_env": "AIMLAPI_API_KEY",
+    "base_url_env": "AIMLAPI_BASE_URL",
+    "default_model": "deepseek/deepseek-v4-pro",
+    "default_base_url": "https://api.aimlapi.com/v1",
+    "api_key_required": true
+  },
+  {
     "name": "openrouter",
     "label": "OpenRouter",
     "api_key_env": "OPENROUTER_API_KEY",
@@ -210,15 +219,6 @@
     "base_url_env": "MODELSCOPE_BASE_URL",
     "default_model": "Qwen/Qwen3.5-27B",
     "default_base_url": "https://api-inference.modelscope.cn/v1",
-    "api_key_required": true
-  },
-  {
-    "name": "aimlapi",
-    "label": "aimlapi.com",
-    "api_key_env": "AIMLAPI_API_KEY",
-    "base_url_env": "AIMLAPI_BASE_URL",
-    "default_model": "deepseek/deepseek-v4-pro",
-    "default_base_url": "https://api.aimlapi.com/v1",
     "api_key_required": true
   },
   {
