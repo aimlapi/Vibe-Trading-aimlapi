@@ -65,7 +65,11 @@ class TestCliInit:
         env_path = tmp_path / ".env"
 
         with patch.object(cli, "_INIT_ENV_PATH", env_path), \
-             patch.object(cli.IntPrompt, "ask", return_value=1), \
+             patch.object(
+                 cli.IntPrompt,
+                 "ask",
+                 return_value=_provider_choice_number("openrouter"),
+             ), \
              patch.object(
                  cli.Prompt,
                  "ask",
