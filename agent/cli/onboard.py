@@ -51,6 +51,12 @@ class Provider:
 
 
 PROVIDERS: Final[tuple[Provider, ...]] = (
+    Provider("aimlapi", "aimlapi.com", "recommended — 350+ chat models, one key",
+             "deepseek/deepseek-v4-pro",
+             "AIMLAPI_API_KEY", "AIMLAPI_BASE_URL",
+             "https://api.aimlapi.com/v1", None,
+             ("deepseek/deepseek-v4-pro", "openai/gpt-5-5",
+              "anthropic/claude-sonnet-4.5", "google/gemini-3.5-flash")),
     Provider("openrouter", "OpenRouter", "recommended — 200+ models, one key",
              "deepseek/deepseek-v4-pro",
              "OPENROUTER_API_KEY", "OPENROUTER_BASE_URL",
